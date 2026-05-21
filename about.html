@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About / Resume - Shiling</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main id="about-content">
+    <div class="page-header animate-in stagger-1">
+      <h1>About / Resume</h1>
+      <p>Professional background & experience</p>
+    </div>
+
+    <div class="profile-header animate-in stagger-2">
+      <div class="profile-avatar">S</div>
+      <div class="profile-info">
+        <h1>Shiling</h1>
+        <p class="headline">前端开发工程师 · 3 年经验</p>
+        <p style="margin-top:0.75rem;color:var(--color-text-light);">
+          Passionate about building clean, performant web applications. Focused on HTML/CSS/JS fundamentals and modern frontend frameworks.
+        </p>
+      </div>
+    </div>
+
+    <!-- Work Experience -->
+    <div class="timeline-section animate-in stagger-3">
+      <h2>工作经历</h2>
+
+      <div class="timeline-item">
+        <h3>前端开发工程师</h3>
+        <div class="meta"><span>ABC Tech 公司</span><span>2024.03 - 至今</span></div>
+        <p>负责公司核心产品的前端架构设计与开发。使用 React + TypeScript 重构了旧版后台管理系统，页面加载性能提升 40%。主导了组件库的搭建与文档编写。</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>初级前端开发</h3>
+        <div class="meta"><span>XYZ 互联网公司</span><span>2022.07 - 2024.02</span></div>
+        <p>参与多个 B 端项目的前端开发工作，负责页面实现与交互优化。积累了扎实的 HTML/CSS/JS 基础，并开始学习 React 生态。</p>
+      </div>
+    </div>
+
+    <!-- Project Experience -->
+    <div class="timeline-section animate-in stagger-4">
+      <h2>项目经历</h2>
+
+      <div class="timeline-item">
+        <h3>智慧校园管理平台</h3>
+        <div class="meta"><span>指导老师：李教授</span><span>2023.09 - 2024.06</span></div>
+        <p>基于 Vue.js 和 Spring Boot 开发的校园综合管理系统，包含课程管理、成绩查询、在线选课等模块。负责前端整体架构设计和核心页面开发，项目获校级优秀毕业设计。</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>疫情数据可视化分析</h3>
+        <div class="meta"><span>2022.03 - 2022.07</span></div>
+        <p>使用 Python + ECharts 对公开疫情数据进行清洗、分析和可视化展示。实现了交互式仪表盘，支持多维度数据筛选与趋势对比。</p>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="timeline-section animate-in stagger-5">
+      <h2>教育背景</h2>
+
+      <div class="timeline-item">
+        <h3>计算机科学与技术 · 学士</h3>
+        <div class="meta"><span>某大学</span><span>2020.09 - 2024.06</span></div>
+        <p>GPA 3.7/4.0 · 连续三年获得校级奖学金</p>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="timeline-section animate-in stagger-6">
+      <h2>专业技能</h2>
+      <div class="skills-cloud">
+        <span class="tag">JavaScript</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">React</span>
+        <span class="tag">Vue.js</span>
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">Python</span>
+        <span class="tag">Git</span>
+        <span class="tag">GitHub Actions</span>
+        <span class="tag">Figma</span>
+        <span class="tag">SQL</span>
+      </div>
+    </div>
+
+    <!-- Actions -->
+    <div style="text-align:center;margin-top:3rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+      <a href="resume.pdf" class="btn btn-primary" download>Download Resume (PDF)</a>
+      <a href="mailto:shiling@example.com" class="btn btn-outline">Contact Me</a>
+    </div>
+  </main>
+
+  <script src="js/role.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    if (getRole() !== 'hr') {
+      document.getElementById('about-content').innerHTML = `
+        <div class="access-denied">
+          <h2>Access Restricted</h2>
+          <p>This page is only available to HR / recruiters.</p>
+          <a href="index.html" class="btn btn-primary">Back to Home</a>
+        </div>
+      `;
+    }
+  </script>
+</body>
+</html>

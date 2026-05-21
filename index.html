@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shiling - Personal Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <h1 class="animate-in stagger-1">Welcome to Shiling's<br>Personal Website</h1>
+      <p class="subtitle animate-in stagger-2">
+        A curated space for my work, thoughts, and projects.
+        Choose your path below to get started.
+      </p>
+      <div class="hero-actions animate-in stagger-3">
+        <button class="btn btn-outline" id="btn-visitor">
+          Visitor
+          <span style="font-weight:400;margin-left:0.5rem;opacity:0.7;font-size:0.85em;">Browse public content</span>
+        </button>
+        <button class="btn btn-primary" id="btn-hr">
+          HR / Recruiter
+          <span style="font-weight:400;margin-left:0.5rem;opacity:0.7;font-size:0.85em;">Full access incl. resume</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="social-links">
+      <a href="https://github.com/shiling" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/shiling" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:shiling@example.com">Email</a>
+    </div>
+    <p>&copy; 2026 Shiling. All rights reserved.</p>
+  </footer>
+
+  <script src="js/role.js"></script>
+  <script>
+    document.getElementById('btn-visitor').addEventListener('click', function() {
+      setRole('visitor');
+      window.location.href = 'blog.html';
+    });
+    document.getElementById('btn-hr').addEventListener('click', function() {
+      setRole('hr');
+      window.location.href = 'blog.html';
+    });
+  </script>
+</body>
+</html>

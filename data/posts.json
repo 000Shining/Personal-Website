@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "我的前端学习之路",
+    "date": "2026-05-01",
+    "summary": "回顾从零基础到独立完成项目的历程，分享学习路线、踩坑经验与成长心得。",
+    "tags": ["前端", "感悟"],
+    "file": "posts/2026-05-01-my-frontend-journey.md"
+  },
+  {
+    "id": 2,
+    "title": "Python 数据处理实战：从 Pandas 到自动化脚本",
+    "date": "2026-04-15",
+    "summary": "记录在数据分析项目中使用 Python 处理亿级数据的实践经验，包括性能优化技巧。",
+    "tags": ["Python", "数据处理", "教程"],
+    "file": "posts/2026-04-15-python-data-processing.md"
+  },
+  {
+    "id": 3,
+    "title": "如何搭建一个零成本的个人网站",
+    "date": "2026-03-20",
+    "summary": "从购买域名到 GitHub Pages 部署，手把手教你用纯静态技术栈搭建个人品牌网站。",
+    "tags": ["教程", "前端", "GitHub Pages"],
+    "file": "posts/2026-03-20-zero-cost-website.md"
+  }
+]
