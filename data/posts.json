@@ -22,5 +22,13 @@
     "summary": "从购买域名到 GitHub Pages 部署，手把手教你用纯静态技术栈搭建个人品牌网站。",
     "tags": ["教程", "前端", "GitHub Pages"],
     "file": "posts/2026-03-20-zero-cost-website.md"
+  },
+  {
+    "id": 4,
+    "title": "AI工具箱与学习自述",
+    "date": "2026-05-21",
+    "summary": "记录日常使用的AI工具、前沿跟进方式，以及Claude Code如何重塑我的工作流程。",
+    "tags": ["AI", "工具", "感悟"],
+    "file": "posts/2026-05-21-ai-toolbox-and-learning.md"
   }
 ]
