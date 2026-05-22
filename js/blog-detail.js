@@ -131,7 +131,7 @@
       }
 
       // Render Mermaid diagrams
-      if (container.querySelectorAll('.mermaid').length > 0) {
+      if (typeof mermaid !== 'undefined' && container.querySelectorAll('.mermaid').length > 0) {
         (async () => {
           try {
             await mermaid.run({ querySelector: '.mermaid' });
