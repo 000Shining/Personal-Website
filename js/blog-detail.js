@@ -117,6 +117,27 @@
           });
         });
       }
+
+      // Convert <pre><code class="language-mermaid"> to <div class="mermaid">
+      const articleEl = container.querySelector('.article-content');
+      if (articleEl) {
+        const mermaidCodes = articleEl.querySelectorAll('pre code.language-mermaid');
+        mermaidCodes.forEach(code => {
+          const div = document.createElement('div');
+          div.className = 'mermaid';
+          div.textContent = code.textContent;
+          code.parentElement.replaceWith(div);
+        });
+      }
+
+      // Render Mermaid diagrams
+      if (container.querySelectorAll('.mermaid').length > 0) {
+        (async () => {
+          try {
+            await mermaid.run({ querySelector: '.mermaid' });
+          } catch (e) { /* silently skip on parse error */ }
+        })();
+      }
     })
     .catch(err => {
       console.error('Failed to load article:', err);

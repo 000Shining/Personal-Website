@@ -27,7 +27,7 @@
   --shadow-md: 0 4px 16px rgba(39, 70, 91, 0.10);
   --shadow-lg: 0 8px 32px rgba(39, 70, 91, 0.12);
   --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  --max-width: 1100px;
+  --max-width: 1200px;
   --nav-height: 64px;
 }
 
@@ -162,7 +162,7 @@ main {
   width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 3rem 2rem;
+  padding: 3rem 1.5rem;
 }
 
 /* === Hero / Home Page === */
@@ -431,8 +431,8 @@ main {
 /* === Blog Detail with TOC === */
 .blog-detail-layout {
   display: grid;
-  grid-template-columns: 220px 1fr;
-  gap: 3rem;
+  grid-template-columns: 200px 1fr;
+  gap: 2rem;
   align-items: start;
 }
 
@@ -535,6 +535,31 @@ main {
 
 .blog-article .article-content li { margin-bottom: 0.4rem; }
 
+.blog-article .article-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.95em;
+}
+
+.blog-article .article-content th,
+.blog-article .article-content td {
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: top;
+}
+
+.blog-article .article-content th {
+  font-weight: 600;
+  background: var(--color-surface);
+  white-space: nowrap;
+}
+
+.blog-article .article-content tr:last-child td {
+  border-bottom: none;
+}
+
 .blog-article .article-content code {
   background: var(--color-surface);
   padding: 0.15rem 0.4rem;
@@ -568,6 +593,42 @@ main {
   border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
   font-style: italic;
   color: var(--color-text-light);
+}
+
+/* === Mermaid Diagrams === */
+.blog-article .article-content .mermaid {
+  margin: 2.5rem 0;
+  padding: 1.5rem 1rem;
+  background: var(--color-surface);
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  text-align: center;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.blog-article .article-content .mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Gantt charts can be extra wide — allow full scroll */
+.blog-article .article-content .mermaid svg[id*="gantt"] {
+  max-width: none;
+  min-width: 700px;
+}
+
+/* Mermaid theme overrides for readability */
+.blog-article .article-content .mermaid .titleText {
+  font-family: var(--font-display) !important;
+  font-size: 14px !important;
+}
+
+.blog-article .article-content .mermaid .taskText {
+  font-family: var(--font-body) !important;
+  font-size: 12px !important;
 }
 
 /* === Portfolio Grid === */
@@ -723,7 +784,7 @@ main {
     --nav-height: 56px;
   }
 
-  main { padding: 2rem 1.25rem; }
+  main { padding: 2rem 1rem; }
 
   .nav { padding: 0 1rem; }
 
