@@ -1,34 +1,18 @@
 [
   {
-    "id": 1,
-    "title": "我的前端学习之路",
-    "date": "2026-05-01",
-    "summary": "回顾从零基础到独立完成项目的历程，分享学习路线、踩坑经验与成长心得。",
-    "tags": ["前端", "感悟"],
-    "file": "posts/2026-05-01-my-frontend-journey.md"
-  },
-  {
-    "id": 2,
-    "title": "Python 数据处理实战：从 Pandas 到自动化脚本",
-    "date": "2026-04-15",
-    "summary": "记录在数据分析项目中使用 Python 处理亿级数据的实践经验，包括性能优化技巧。",
-    "tags": ["Python", "数据处理", "教程"],
-    "file": "posts/2026-04-15-python-data-processing.md"
-  },
-  {
-    "id": 3,
-    "title": "如何搭建一个零成本的个人网站",
-    "date": "2026-03-20",
-    "summary": "从购买域名到 GitHub Pages 部署，手把手教你用纯静态技术栈搭建个人品牌网站。",
-    "tags": ["教程", "前端", "GitHub Pages"],
-    "file": "posts/2026-03-20-zero-cost-website.md"
-  },
-  {
     "id": 4,
-    "title": "AI工具箱与学习自述",
-    "date": "2026-05-21",
+    "title": "Discussion 1: AI工具箱与学习自述",
+    "date": "2026-05-22",
     "summary": "记录日常使用的AI工具、前沿跟进方式，以及Claude Code如何重塑我的工作流程。",
     "tags": ["AI", "工具", "感悟"],
-    "file": "posts/2026-05-21-ai-toolbox-and-learning.md"
+    "file": "posts/2026-05-22-ai-toolbox-and-learning.md"
+  },
+  {
+    "id": 5,
+    "title": "Discussion 5 近期AI产品推荐",
+    "date": "2026-05-22",
+    "summary": "分享两个值得关注的AI产品——OpenHuman让工具主动理解用户，WiseClaw 2.0为医疗AI落地提供工程范本。",
+    "tags": ["AI", "产品推荐", "工具"],
+    "file": "posts/2026-05-22-ai-product-recommendations.md"
   }
 ]

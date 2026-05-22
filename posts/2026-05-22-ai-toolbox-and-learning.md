@@ -1,6 +1,6 @@
 ---
 id: 4
-title: "AI工具箱与学习自述"
+title: "Discussion 1: AI工具箱与学习自述"
 date: "2026-05-22"
 summary: "记录日常使用的AI工具、前沿跟进方式，以及Claude Code如何重塑我的工作流程。"
 tags: ["AI", "工具", "感悟"]
