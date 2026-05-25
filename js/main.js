@@ -59,9 +59,9 @@
   const footerHTML = `
     <footer class="site-footer">
       <div class="social-links">
-        <a href="https://github.com/shiling" target="_blank" rel="noopener" title="GitHub">GitHub</a>
-        <a href="https://linkedin.com/in/shiling" target="_blank" rel="noopener" title="LinkedIn">LinkedIn</a>
-        <a href="mailto:shiling@example.com" title="Email">Email</a>
+        <a href="https://github.com/000Shining" target="_blank" rel="noopener" title="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/shiling-zheng-240802289/" target="_blank" rel="noopener" title="LinkedIn">LinkedIn</a>
+        <a href="mailto:shiling.zheng@foxmail.com" title="Email">Email</a>
       </div>
       <p>&copy; ${new Date().getFullYear()} Shiling. All rights reserved.</p>
     </footer>
